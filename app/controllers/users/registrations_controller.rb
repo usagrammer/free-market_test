@@ -10,10 +10,13 @@ class Users::RegistrationsController < Devise::RegistrationsController
   #   super
   # end
 
-  # POST /resource
-  # def create
-  #   super
-  # end
+  def create
+
+    build_resource(sign_up_params)
+    @user.save! unless @user.valid?
+
+    super
+  end
 
   # GET /resource/edit
   # def edit
@@ -52,6 +55,10 @@ class Users::RegistrationsController < Devise::RegistrationsController
   end
 
   # protected
+  private
+  def after_sign_up_path_for(resource)
+    user_path(resource)
+  end
 
   # If you have extra params to permit, append them to the sanitizer.
   # def configure_sign_up_params
