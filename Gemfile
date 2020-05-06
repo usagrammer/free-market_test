@@ -75,3 +75,6 @@ gem 'omniauth-rails_csrf_protection'
 gem 'active_hash'
 
 gem 'activerecord-import'
+
+gem 'carrierwave'
+gem 'mini_magick'
