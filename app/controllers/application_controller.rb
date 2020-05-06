@@ -1,5 +1,6 @@
 class ApplicationController < ActionController::Base
   before_action :configure_permitted_paramaters, if: :devise_controller? ## 追加
+  before_action :authenticate_user!
 
   private
 
