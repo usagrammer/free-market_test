@@ -79,7 +79,6 @@ class Users::RegistrationsController < Devise::RegistrationsController
   ## 以下追加
   def confirm_phone
     @progress = 2
-    binding.pry
   end
 
   def new_address
