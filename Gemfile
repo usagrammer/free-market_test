@@ -82,3 +82,5 @@ gem 'mini_magick'
 gem 'ancestry'
 
 gem 'kaminari'
+
+gem 'payjp'
