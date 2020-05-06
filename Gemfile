@@ -78,3 +78,5 @@ gem 'activerecord-import'
 
 gem 'carrierwave'
 gem 'mini_magick'
+
+gem 'ancestry'
